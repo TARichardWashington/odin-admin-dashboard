@@ -149,7 +149,7 @@ body {
 
 #main {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 5fr 2fr;
     color: var(--dark-blue);
     padding: 1rem;
     background-color: var(--very-light-gray);
@@ -204,12 +204,20 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .announcement:not(:last-child) {
   padding-bottom: 1rem;
   border-bottom: 1px var(--very-light-gray) solid;
   margin-bottom: 1rem;
+}
+
+#trending #trending-panel {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 700px) {
