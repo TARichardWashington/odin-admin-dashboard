@@ -191,6 +191,14 @@ body {
   padding: 1rem;
   border-radius: 0.5rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#announcements .container p:not(:last-child) {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--very-light-gray);
+  margin-bottom: 0.5rem;
 }
 
 .project {
@@ -219,5 +227,21 @@ body {
   background-color: white;
   padding: 1rem;
   border-radius: 0.5rem;
-  height: 100%
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+nav .nav-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  height: 100%;
+  padding: 1rem;
+}
+
+nav .nav-container div {
+  
 }
