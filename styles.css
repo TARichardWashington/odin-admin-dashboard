@@ -234,14 +234,44 @@ body {
   align-items: center;
 }
 
-nav .nav-container {
+nav #nav-container {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 2fr;
   height: 100%;
   padding: 1rem;
+
 }
 
-nav .nav-container div {
-  
+nav #nav-container #search {
+  display: flex;
 }
+
+nav #nav-container #search form {
+  flex: 1;
+}
+
+nav #nav-container #search input {
+  border-radius: 10px;
+  width: 90%;
+  height: 2rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: var(--very-light-gray);
+  border: 0px;
+}
+
+nav #nav-container #search img {
+  height: 2rem;
+}
+
+nav #nav-container #account {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
+nav #nav-container #account img {
+  width: 2rem;
+}
+
