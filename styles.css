@@ -149,7 +149,7 @@ body {
 
 #main {
   display: grid;
-  grid-template-columns: 5fr 2fr;
+  grid-template-columns: 6fr 2fr;
   grid-template-rows: 1fr 1fr;
   color: var(--dark-blue);
   gap: 2rem;
@@ -193,6 +193,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 #announcements .container p:not(:last-child) {
@@ -239,12 +240,11 @@ nav #nav-container {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr 2fr;
   height: 100%;
-  padding: 1rem;
-
 }
 
 nav #nav-container #search {
   display: flex;
+  align-items: center;
 }
 
 nav #nav-container #search form {
@@ -269,9 +269,32 @@ nav #nav-container #account {
   display: flex;
   gap: 1rem;
   justify-content: end;
+  align-items: center;
+  margin-right: 15rem;
 }
 
 nav #nav-container #account img {
   width: 2rem;
+}
+
+nav #nav-container #buttons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+  margin-right: 10rem;
+}
+
+nav #nav-container #buttons button {
+  background-color: var(--yellow);
+  border: 0px;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  width: 6rem;
+  color: var(--white);
+}
+
+nav #nav-container #buttons button:hover {
+  border: 2px solid var(--dark-blue);
 }
 
